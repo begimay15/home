@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7ddf90e-7a97-4f67-a1df-5e5ea56f53cd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rGJ4yiW9sZDpYcdwdPQGIOvb9e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/image/footer" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Пользователь\Desktop\Home\image\footer" />
+      <recent name="C:\Users\Пользователь\Desktop\Home\image\house slider" />
+      <recent name="C:\Users\Пользователь\Desktop\Home\image\info" />
+      <recent name="C:\Users\Пользователь\Desktop\Home\image\catalog" />
+      <recent name="C:\Users\Пользователь\Desktop\Home\image\title" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Пользователь\Desktop\Home\Sourse\js" />
+      <recent name="C:\Users\Пользователь\Desktop\Home\fonts" />
+      <recent name="C:\Users\Пользователь\Desktop\home" />
+      <recent name="C:\Users\Пользователь\Desktop\home\style" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7ddf90e-7a97-4f67-a1df-5e5ea56f53cd" name="Default Changelist" comment="" />
+      <created>1618596306187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618596306187</updated>
+      <workItem from="1618596308172" duration="3034000" />
+      <workItem from="1618686027285" duration="4247000" />
+      <workItem from="1618690333454" duration="1933000" />
+      <workItem from="1618692802504" duration="11140000" />
+      <workItem from="1618774864998" duration="1299000" />
+      <workItem from="1618852405299" duration="10988000" />
+      <workItem from="1618939984161" duration="20047000" />
+      <workItem from="1619037140595" duration="4645000" />
+      <workItem from="1619114812268" duration="19544000" />
+      <workItem from="1619286918206" duration="628000" />
+      <workItem from="1619308275208" duration="7622000" />
+      <workItem from="1619394437387" duration="30326000" />
+      <workItem from="1619950438371" duration="32676000" />
+      <workItem from="1620232642911" duration="97000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

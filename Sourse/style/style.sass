@@ -1,0 +1,609 @@
+body
+  position: relative
+
+/* MIXINS */
+
+@mixin phoneIcon-before
+  content: ''
+  display: inline-block
+  position: absolute
+  width: 30px
+  height: 30px
+  background: #fff
+  box-shadow: 0 4px 10px rgba(18, 103, 26, 0.15)
+  border-radius: 50%
+  z-index: -1
+  left: 50%
+  top: 50%
+  transform: translateY(-52%) translateX(-48%)
+
+@mixin social-before
+  content: ''
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-51%) translateX(-32%)
+  width: 67px
+  height: 67px
+  background: transparent
+  border: 1px solid $green
+  border-radius: 50%
+  z-index: -1
+
+@mixin social-after
+  content: ''
+  position: absolute
+  left: 15px
+  top: 50%
+  transform: translateY(-50%) translateX(-53%)
+  width: 40px
+  height: 40px
+  background: transparent
+  border: 8px solid  rgba(33, 184, 47, 0.25)
+  border-radius: 50%
+  z-index: -1
+
+
+/* END MIXINS */
+
+/* variables */
+
+$green: #21B82F
+
+/* end variables */
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: 'Roboto', sans-serif
+.container
+  max-width: 1110px
+  margin: 0 auto
+.row
+  display: flex
+  flex-wrap: wrap
+.col-6
+  width: 50%
+a
+  text-decoration: none
+.header__inner
+  position: absolute
+  padding: 30px 0
+  left: 0
+  right: 0
+  .row
+    justify-content: space-between
+    align-items: center
+    .company__address
+      font-weight: normal
+      font-size: 18px
+      line-height: 21px
+      color: #131313
+    .company__number
+      min-width: 240px
+    .call__icon-inner
+      display: inline-block
+      position: relative
+      right: 15px
+      z-index: 1
+      &:before
+        @include phoneIcon-before
+    .phone__number
+      font-weight: normal
+      font-size: 24px
+      line-height: 28px
+      text-align: right
+      color: #131313
+      letter-spacing: 1px
+    .working__time
+      display: block
+      margin-top: 15px
+      font-size: 18px
+      line-height: 21px
+      text-align: right
+      color: #131313
+.hero
+  background: url("/image/hero/bgHeader 3 (3).svg")
+  min-height: 750px
+  padding: 195px 0 105px 0
+  &__title
+    display: inline-block
+    width: 650px
+    font-family: 'Exo', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 54px
+    line-height: 77px
+    white-space: pre-line
+    span
+      color: $green
+  &__desc
+    display: block
+    margin: 30px 0 70px 0
+    font-weight: normal
+    font-size: 28px
+    line-height: 33px
+    color: #131313
+  &__price-btn
+    padding: 25px 35px
+    background: linear-gradient(180deg, #21B82F 0%, #257C25 100%)
+    box-shadow: 0 4px 15px rgba(18, 103, 26, 0.4)
+    border-radius: 32px
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    color: #FBFBFB
+    .leaf__icon-inner
+      position: relative
+      left: 10px
+      z-index: 1
+      &:before
+        @include phoneIcon-before
+  .social__icon
+    display: flex
+    margin-top: 110px
+    .wts__icon-inner
+      //display: block
+      position: relative
+      z-index: 1
+      &:before
+        @include social-before
+      &:hover:before
+        width: 40px
+        height: 40px
+      &:after
+        @include social-after
+      &:hover:after
+        width: 67px
+        height: 67px
+    .tlg__icon-inner
+      position: relative
+      left: 75px
+      z-index: 1
+      &:before
+        @include social-before
+      &:after
+        @include social-after
+.menu__inner
+  padding: 50px 0
+  background: linear-gradient(90deg, #21B82F 0%, #257C25 100%)
+  .menu__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    list-style-type: none
+  .menu__link
+    position: relative
+    font-weight: 500
+    font-size: 20px
+    line-height: 23px
+    color: #FBFBFB
+    &:hover
+     &:before
+      content: ''
+      width: 100%
+      height: 3px
+      background: #fff
+      position: absolute
+      bottom: -10px
+.how-to-get
+  padding-top: 100px
+  .row
+    margin: 0 -65px
+  .col-6
+    padding: 0 65px
+  &__inner
+    position: relative
+    z-index: 1
+  &__title
+    display: block
+    font-weight: bold
+    font-size: 40px
+    line-height: 53px
+    text-align: center
+    color: #131313
+  &__desc
+    display: block
+    margin: 40px auto 20px auto
+    font-size: 20px
+    line-height: 23px
+    text-align: center
+    color: #131313
+  &__address
+    display: block
+    margin-bottom: 60px
+    font-weight: 500
+    font-size: 22px
+    line-height: 26px
+    text-align: center
+    color: #131313
+  &__icon__inner
+    display: flex
+    align-items: center
+    padding-bottom: 25px
+    .icon__car
+      position: relative
+      right: 15px
+      z-index: 1
+      &:before
+        @include phoneIcon-before
+        left: 0
+        transform: translateY(-46%) translateX(-19%)
+    .icon__title
+      margin: 0 0 40px 15px
+      font-weight: bold
+      font-size: 26px
+      line-height: 30px
+      color: #131313
+  &__title-1
+    display: block
+    width: 555px
+    padding-bottom: 20px
+    font-size: 16px
+    line-height: 30px
+    color: #131313
+  &__drawing
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -1
+  &__house
+    position: absolute
+    right: 0
+    bottom: 0
+    z-index: -1
+#map
+  position: relative
+  min-height: 695px
+  padding-top: 80px
+  z-index: -1
+  .map__inner
+    display: flex
+    position: absolute
+    z-index: 1
+    width: 945px
+    align-items: center
+    min-height: 300px
+    margin-top: 80px
+    background: #ffffff
+    box-shadow: 0 10px 34px rgba(18, 103, 26, 0.25)
+    .clock
+      padding: 0 60px 0 150px
+      &:before
+        @include phoneIcon-before
+    .map__title
+      display: block
+      padding-bottom: 20px
+      font-weight: 500
+      font-size: 34px
+      line-height: 40px
+      span
+        color: #21b82f
+    .map__desc
+      display: inline-block
+      font-size: 34px
+      line-height: 40px
+      text-align: center
+      span
+        color: #21B82F
+#slider
+  padding: 60px 0 85px 0
+  .row
+    margin: 0 -15px 30px -15px
+    .col-3
+      padding: 0 15px
+#season
+  padding-top: 60px
+  padding-bottom: 85px
+  .row
+    margin: 0 -65px
+  .col-5
+    width: 30%
+    padding: 0 65px
+    .item
+      height: 560px
+      background: rgba(33, 184, 47, 0.15)
+      border-radius: 10px 100px 0
+      .season__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        .season__icon
+          padding: 60px 0 10px 0
+          &:before
+            @include phoneIcon-before
+        .season__desc
+          width: 130px
+          text-align: center
+          padding-bottom: 40px
+  .col-7
+    width: 70%
+    padding: 0 65px
+    .season__btn-inner
+      position: relative
+      width: 700px
+      .summer__btn
+        display: inline-block
+        width: 360px
+        padding: 20px 0
+        text-align: center
+        font-size: 30px
+        line-height: 35px
+        color: rgba(33, 184, 47, 0.5)
+        border: 2px solid rgba(33, 184, 47, 0.5)
+        box-sizing: border-box
+        border-radius: 10px 34px 34px 10px
+      .winter__btn
+        display: inline-block
+        width: 405px
+        padding: 20px 0
+        text-align: center
+        font-weight: 500
+        font-size: 30px
+        line-height: 35px
+        color: #FBFBFB
+        background: linear-gradient(180deg, #21B82F 0%, #257C25 100%)
+        border: 2px solid rgba(33, 184, 47, 0.5)
+        box-sizing: border-box
+        border-radius: 34px 10px 10px 34px
+        position: absolute
+        right: 5px
+    .season__desc-1
+        display: block
+        width: 700px
+        margin: 45px 0 20px 0
+        font-size: 16px
+        line-height: 28px
+        color: #131313
+    .season__desc-2
+        display: block
+        width: 700px
+        margin-bottom: 45px
+        font-size: 16px
+        line-height: 28px
+        color: #131313
+    .season__prise
+      display: flex
+      justify-content: space-between
+      width: 700px
+      .square__size, .prise
+        font-weight: bold
+        font-size: 38px
+        line-height: 45px
+        color: #21B82F
+#credit
+  padding: 110px 0
+  background: linear-gradient(0deg, rgba(251, 250, 250, 0.6), rgba(251, 250, 250, 0.6)), url("../../image/credit/Rectangle 6.svg") center center/ cover no-repeat
+  .row
+    margin: 0 -85px
+    .col-6
+      padding: 0 85px
+      .credit__logo
+        margin-top: 70px
+  .credit__title
+    display: block
+    margin-bottom: 20px
+    font-weight: bold
+    font-size: 40px
+    line-height: 53px
+    text-align: center
+    color: #131313
+  .credit__desc
+    display: block
+    width: 550px
+    margin-bottom: 70px
+    font-size: 16px
+    line-height: 28px
+    color: #131313
+  .credit__btn
+    padding: 25px 40px
+    background: linear-gradient(180deg, #21B82F 0%, #257C25 100%)
+    box-shadow: 0 4px 15px rgba(18, 103, 26, 0.4)
+    border-radius: 32px
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    color: #FBFBFB
+#cooperation
+  min-height: 590px
+  padding: 145px 0 100px 0
+  .cooperation__inner
+    display: flex
+    position: relative
+    z-index: 1
+    .cooperation__title
+      display: block
+      font-size: 40px
+      font-weight: bold
+      line-height: 53px
+      text-align: center
+      color: #131313
+    .cooperation__desc
+      display: block
+      width: 945px
+      margin: 40px 0 30px 0
+      font-weight: normal
+      font-size: 20px
+      line-height: 35px
+      color: #131313
+    .cooperation__desc1
+      display: block
+      width: 945px
+      margin: 40px 0 30px 0
+      font-weight: normal
+      font-size: 20px
+      line-height: 35px
+      color: #131313
+    .cooperation__img-house
+      position: absolute
+      left: 0
+      top:  185px
+      z-index: -1
+    .cooperation__img-pen
+      position: absolute
+      right: 0
+      bottom: 0
+      z-index: -1
+#catalog
+  min-height: 450px
+  .catalog__inner
+    width: 100%
+    .col-6
+      width: 50%
+      .catalog__item
+        height: 450px
+        text-align: center
+        background: url("../../image/catalog/c bg1.svg")
+      .catalog__title
+        display: block
+        padding: 120px 0 20px 0
+        text-align: center
+        font-weight: bold
+        font-size: 30px
+        line-height: 35px
+        color: #FBFBFB
+      .catalog__desc
+        display: inline-block
+        width: 460px
+        left: 390px
+        font-size: 18px
+        line-height: 28px
+        color: #FBFBFB
+      .catalog__item-right
+        height: 450px
+        text-align: center
+        background: url("../../image/catalog/right bg.svg") center center/ cover no-repeat
+      .catalog__item-left
+        height: 450px
+        text-align: center
+        background: url("../../image/catalog/left bg.svg") center center/ cover no-repeat
+      .catalog__item-4
+        height: 450px
+        text-align: center
+        background: url("../../image/catalog/bg2.svg") center center/ cover no-repeat
+#info
+  padding: 160px 0
+  .info__inner
+    min-height: 680px
+    position: relative
+    z-index: 1
+    .info__img-1
+      position: absolute
+      left: 0
+      top: 185px
+      z-index: -1
+    .info__img-2
+      position: absolute
+      right: 0
+      bottom: 0
+      z-index: -1
+    .col-12
+      width: 100%
+    .info__desc
+      display: block
+      width: 830px
+      margin: 0 auto 75px auto
+      font-size: 20px
+      line-height: 36px
+      text-align: center
+      color: #131313
+    .info__number-inner
+      text-align: center
+      margin-bottom: 75px
+      .phone__icon-inner
+        position: relative
+        z-index: 1
+        right: 35px
+        &:before
+          @include phoneIcon-before
+          width: 60px
+          height: 60px
+          transform: translateY(-60%) translateX(-50%)
+    .info__number
+      font-weight: bold
+      font-size: 34px
+      line-height: 34px
+      color: #21B82F
+    .info__work-time
+      display: block
+      padding-bottom: 90px
+      width: 945px
+      white-space: pre-line
+      margin: 0 auto 90px auto
+      font-size: 20px
+      line-height: 36px
+      text-align: center
+      color: #131313
+    .feed__back-form
+      display: flex
+      justify-content: space-between
+      #name, #email, #number
+        width: 260px
+        padding: 25px 0 25px 40px
+        border: 1px solid rgba(33, 184, 47, 0.5)
+        box-sizing: border-box
+        border-radius: 32px
+        font-size: 18px
+        line-height: 21px
+        color: rgba(33, 184, 47, 0.5)
+        &::placeholder
+          color: rgba(33, 184, 47, 0.5)
+      .send__btn
+        width: 260px
+        padding: 25px 40px
+        background: linear-gradient(180deg, #21B82F 0%, #257C25 100%)
+        box-shadow: 0 4px 15px rgba(18, 103, 26, 0.4)
+        border-radius: 32px
+        font-weight: 500
+        font-size: 18px
+        line-height: 21px
+        color: #FBFBFB
+        border: none
+#house__slider
+  min-height: 1280px
+  padding-bottom: 300px
+  background: linear-gradient(180deg, #FFFFFF 7.27%, rgba(255, 255, 255, 0) 100.04%), url('../../image/house slider/bgFooter.svg') center center/ cover no-repeat
+  .row
+    margin: -15px
+    .col-4
+      width: 33.333%
+      padding: 15px
+    .col-7
+      width: 60%
+      padding: 0 15px
+      margin-top: 30px
+    .col-5
+      width: 40%
+      padding: 0 15px
+      margin-top: 30px
+.footer
+  position: absolute
+  width: 100%
+  bottom: 0
+  padding: 60px 0 40px 0
+  background: linear-gradient(90deg, rgba(33, 184, 47, 0.8) 0%, rgba(37, 124, 37, 0.8) 100%)
+  .footer__item-inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .footer__number
+      text-align: center
+    .ft__num
+      display: block
+      padding-bottom: 20px
+      font-weight: bold
+      font-size: 34px
+      line-height: 34px
+      color: #FBFBFB
+    .working__time
+      font-size: 18px
+      line-height: 18px
+      color: #FBFBFB
+    .footer__social-icon
+      width: 260px
+      display: flex
+      justify-content: space-between
+
+
